@@ -11,4 +11,4 @@ const getTalkers = async (_req, res) => {
     }
 };
 
-module.exports = { getTalkers };
+module.exports = getTalkers;
