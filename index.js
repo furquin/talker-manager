@@ -10,8 +10,11 @@ const {
     nameValidation,
     ageValidation,
     talkerValidation,
-  formatValidation } = require('./middleWares/registrationValidation');
+    rateValidation,
+    watchedAtValidation,
+} = require('./middleWares/registrationValidation');
 const newTalker = require('./middleWares/newTalker');
+const editedTalker = require('./middleWares/editTalker');
 
 const app = express();
 app.use(bodyParser.json());
@@ -30,8 +33,18 @@ app.post('/talker',
   nameValidation,
   ageValidation,
   talkerValidation,
-  formatValidation,
+  watchedAtValidation,
+  rateValidation,
   newTalker);
+
+  app.put('/talker/:id',
+  tokenValidation,
+  nameValidation,
+  ageValidation,
+  talkerValidation,
+  watchedAtValidation,
+  rateValidation,
+  editedTalker);
 
 app.get('/', (_request, response) => {
   response.status(HTTP_OK_STATUS).send();
