@@ -15,6 +15,7 @@ const {
 } = require('./middleWares/registrationValidation');
 const newTalker = require('./middleWares/newTalker');
 const editedTalker = require('./middleWares/editTalker');
+const deleteTalker = require('./middleWares/deleteTalker');
 
 const app = express();
 app.use(bodyParser.json());
@@ -37,7 +38,7 @@ app.post('/talker',
   rateValidation,
   newTalker);
 
-  app.put('/talker/:id',
+app.put('/talker/:id',
   tokenValidation,
   nameValidation,
   ageValidation,
@@ -45,6 +46,8 @@ app.post('/talker',
   watchedAtValidation,
   rateValidation,
   editedTalker);
+
+app.delete('/talker/:id', tokenValidation, deleteTalker);
 
 app.get('/', (_request, response) => {
   response.status(HTTP_OK_STATUS).send();
