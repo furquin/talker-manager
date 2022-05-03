@@ -17,7 +17,7 @@
 
 # Sobre
 
-### Projeto desenvolvido enquanto estudante na [trybe](https://www.betrybe.com/formacao-desenvolvimento-web), Meu primeiro projeto desenvolvido com nodeJs, o projeto foi todo desenvolvido no arquivo index.js, conta com 8 rotas e 8 middlewares de validação das regras de negócio, o diferencial desse projeto são diversas validação nas rotas, incluindo um token gerado com 16 caracteres. 
+### Projeto desenvolvido enquanto estudante na [trybe](https://www.betrybe.com/formacao-desenvolvimento-web), Meu primeiro projeto desenvolvido com nodeJs, o projeto foi todo desenvolvido no arquivo index.js, conta com 8 rotas e 8 middlewares de validação das regras de negócio, os diferenciais desse projeto são diversas validações nas rotas, incluindo um token gerado com 16 caracteres. 
 
 #
 
