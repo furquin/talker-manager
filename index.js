@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const getTalkers = require('./middleWares/getTalkers');
 const getTalkerById = require('./middleWares/getTalkerById');
 const emailValidation = require('./middleWares/emailValidation');
@@ -19,7 +18,7 @@ const deleteTalker = require('./middleWares/deleteTalker');
 const searchTalker = require('./middleWares/searchTalker');
 
 const app = express();
-app.use(bodyParser.json());
+app.use(express.json());
 
 const HTTP_OK_STATUS = 200;
 const PORT = '3000';
