@@ -1,5 +1,5 @@
 <div align="center"> 
-    <img width="1000px" height="500px" align="center"src="./README/Rotas.gif">
+    <img width="920px" height="500px" align="center"src="./README/Rotas.gif">
 </div>
 
 <br>
